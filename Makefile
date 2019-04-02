@@ -13,4 +13,4 @@ test:
 	@make -C tests
 
 clean:
-	@rm -f build/*.[ao] tests/a.out
+	@rm -f build/*.[ao] tests/a.out tests/core

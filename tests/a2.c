@@ -15,14 +15,16 @@
 #include "a2.h"
 #include "ctpl.h"
 
+#define ARR_SIZ(A) (sizeof(A)/sizeof(A[0]))
+
 int main (int argc, char *argv[])
 {
-    struct books B[3] = {
+    struct books B[] = {
         {"Pragmatic Programmer" , 111, "Andrew & Dave"},
         {"Passionate Programmer", 222, "Chad Fowler"}  ,
         {"Clean Coder"          , 333, "Bob Martin"}   ,
     };
-    int  N            = 3;
+    int  N            = ARR_SIZ(B);
     char bbuf[BUFSIZ] = {0};
     char *tpl =
         "<books>\n"
