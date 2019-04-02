@@ -1,8 +1,8 @@
 # C Templates
 
-A C based template engine, with C as the template language.
-I.e., create templates with C code embedded in it, that can
-be expanded at runtime.
+A `C` based template engine, with `C` as the template language.
+I.e., create templates with `C` code embedded in it, that can
+be expanded at runtime (`eval` like capability!).
 
 See `tests/` directory. At a basic level, `ctpl` can be used
 as an extended `sprintf` where the host program's variables
